@@ -8,9 +8,7 @@ console.log(Boolean(Number(bool)))
 
 
 
-
-
-
-
-
 // Coersão
+
+
+console.log((true + "10"))
