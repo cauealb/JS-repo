@@ -1,14 +1,9 @@
-// Conversão
+try {
+    console.log(value)
 
-let num = "3"
-console.log(num)
+} catch (err) {
+    console.log(err)
 
-let bool = "0";
-console.log(Boolean(Number(bool)))
-
-
-
-// Coersão
-
-
-console.log((true + "10"))
+} finally {
+    console.log("Fim")
+}
