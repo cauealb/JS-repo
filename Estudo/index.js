@@ -20,5 +20,5 @@
 // console.log(arrTag.item(0))
 
 // Vendo as propríedades
-const heroClass = document.getElementsByClassName("hero")
-console.dir(heroClass)
+// const heroClass = document.getElementsByClassName("hero")
+// console.dir(heroClass)
