@@ -22,3 +22,5 @@
 // Vendo as propríedades
 // const heroClass = document.getElementsByClassName("hero")
 // console.dir(heroClass)
+
+document.title = "Python"
