@@ -10,4 +10,7 @@
 
 // Selecionando o elemento pela Classe
 const guestElements = document.getElementsByClassName("guest")
-console.log(guestElements)
+// console.log(guestElements)
+
+// Selecionando um dos elementos do array HTML collection
+console.log(guestElements.item(0))
