@@ -5,5 +5,9 @@
 // console.log(document.title)
 
 // Selecionando pelo Id
-const guest1 = document.getElementById("guest-2")
-console.log(guest1)
+// const guest1 = document.getElementById("guest-2")
+// console.log(guest1)
+
+// Selecionando o elemento pela Classe
+const guestElements = document.getElementsByClassName("guest")
+console.log(guestElements)
