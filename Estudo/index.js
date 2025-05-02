@@ -9,8 +9,12 @@
 // console.log(guest1)
 
 // Selecionando o elemento pela Classe
-const guestElements = document.getElementsByClassName("guest")
+// const guestElements = document.getElementsByClassName("guest")
 // console.log(guestElements)
 
 // Selecionando um dos elementos do array HTML collection
-console.log(guestElements.item(0))
+// console.log(guestElements.item(0))
+
+// Selecionando elementos pela tag
+const arrTag = document.getElementsByTagName("li")
+console.log(arrTag.item(0))
