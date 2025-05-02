@@ -1,5 +1,17 @@
-const show = function(name) {
-    return `Olá ${name}`;
+// const arrow = (exe, callback) => {
+//     console.log(exe);
+
+//     callback();
+// }
+
+function arrow(exe, callback) {
+    console.log(exe);
+
+    callback();
 }
 
-console.log(show("João"));
+function execute() {
+    console.log("Operação feita.");
+}
+
+arrow("Salvando arquivo...", execute);
