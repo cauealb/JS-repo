@@ -16,5 +16,9 @@
 // console.log(guestElements.item(0))
 
 // Selecionando elementos pela tag
-const arrTag = document.getElementsByTagName("li")
-console.log(arrTag.item(0))
+// const arrTag = document.getElementsByTagName("li")
+// console.log(arrTag.item(0))
+
+// Vendo as propríedades
+const heroClass = document.getElementsByClassName("hero")
+console.dir(heroClass)
