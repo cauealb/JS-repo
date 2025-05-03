@@ -1,4 +1,7 @@
 // Adicionando classes já existentes em um elemento
-const input = document.querySelector("#task")
+const input1 = document.querySelector("#task")
 
-input.classList.add("input-error")
+input1.classList.add("input-error")
+
+// Removendo classes já existentes em um elemento
+input1.classList.remove("input-error")
