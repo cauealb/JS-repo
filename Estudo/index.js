@@ -1,8 +1,5 @@
-const btn = document.getElementById("btn");
+// Colocando evento da tela toda
 
-// Adicioando ou atualizando um atributo
-btn.setAttribute("disabled", true)
-
-// Removendo atributuos
-btn.removeAttribute("id")
-btn.removeAttribute("disabled")
+window.addEventListener("load", (e) => {
+    console.log("Tela foi recarregada com sucesso!")
+})
