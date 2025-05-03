@@ -1,16 +1,5 @@
-// Adicionando classes já existentes em um elemento
-// const input1 = document.querySelector("#task")
+const listTask = document.getElementsByTagName("ul");
 
-// input1.classList.add("input-error")
+const newTask = document.createElement("li");
+const newTaksName = document.createElement("span");
 
-// Removendo classes já existentes em um elemento
-// input1.classList.remove("input-error")
-
-// Usando a função toggle para verificar se tem a classe, se tiver ele remove, se não ele adiciona
-// input1.classList.toggle("input-error")
-
-// Adicionado estilos no JS
-const btn = document.querySelector("button")
-
-btn.style.color = "Black"
-btn.style.backgroundColor = "White"
