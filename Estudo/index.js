@@ -3,5 +3,5 @@
 // console.log(guest_1)
 
 // Acessando elementos pelo querySelectorAll
-// const guests = document.querySelectorAll(".guest")
-// console.log(guests)
+const guests = document.querySelectorAll("li")
+console.log(guests)
