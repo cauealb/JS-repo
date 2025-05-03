@@ -5,7 +5,8 @@ window.addEventListener("load", (e) => {
 
 // Colocando o evento no documento
 addEventListener("click", (e) => {
-    // console.log(e)
+    // Deixando o evento como padrão
+    e.preventDefault()
 
     // Pegando o evento o elemento que foi clicado
     console.log(e.target)
