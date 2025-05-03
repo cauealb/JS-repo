@@ -1,14 +1,4 @@
-// Exibindo com textContent
-const guest = document.querySelector("#guest-1 ")
-console.log(guest.textContent)
+// Adicionando classes já existentes em um elemento
+const input = document.querySelector("#task")
 
-guest.textContent = "Cauê"
-
-// Exibindo com innerText
-const guest1 = document.querySelector("#guest-2 span")
-
-guest1.innerText = "DOM"
-
-// // Exibindo com innerHTML
-// const guest2 = document.querySelector("#guest-1")
-// console.log(guest2.innerHTML)
+input.classList.add("input-error")
