@@ -10,4 +10,7 @@ addEventListener("click", (e) => {
 
     // Pegando o evento o elemento que foi clicado
     console.log(e.target)
+
+    // Pegando o texto que tem ao clicar no elemento
+    console.log(e.target.textContent)
 })
