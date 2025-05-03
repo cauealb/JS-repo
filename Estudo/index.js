@@ -1,4 +1,4 @@
-const listTask = document.getElementsByTagName("ul");
+const listTask = document.querySelector("ul");
 
 const newTask = document.createElement("li");
 const newTaksName = document.createElement("span");
@@ -6,4 +6,4 @@ const newTaksName = document.createElement("span");
 newTaksName.textContent = "Cauê";
 newTask.append(newTaksName);
 
-console.log(newTask);
+listTask.append(newTask);
