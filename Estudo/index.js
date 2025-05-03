@@ -14,6 +14,7 @@
 
 // Selecionando um dos elementos do array HTML collection
 // console.log(guestElements.item(0))
+// console.log(guestElements[1])
 
 // Selecionando elementos pela tag
 // const arrTag = document.getElementsByTagName("li")
