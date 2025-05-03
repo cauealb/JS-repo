@@ -1,10 +1,4 @@
-const listTask = document.querySelector("ul");
+const btn = document.getElementById("btn");
 
-const newTask = document.createElement("li");
-newTask.classList.add("guest")
-const newTaksName = document.createElement("span");
-
-newTaksName.textContent = "Cauê";
-newTask.append(newTaksName);
-
-listTask.prepend(newTask);
+// Adicioando ou atualizando um atributo
+btn.setAttribute("disabled", true)
