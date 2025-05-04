@@ -17,6 +17,18 @@ amounInput.addEventListener("input", () => {
 // Executando o evento quando ele dá um submit no formulário
 form.onsubmit = (e) => {
     e.preventDefault();
+
+    switch (currency.value) {
+        case "USD":
+            convertCurrency(currency.value, USD, "US$");
+            break;
+        case "EUR":
+            convertCurrency(currency.value, EUR, "€");
+            break
+        case "GBP":
+            convertCurrency(currency.value, GBP, "£")
+            break
+    }
 }
 
 const convertCurrency = function(currency, price, sybol) {
