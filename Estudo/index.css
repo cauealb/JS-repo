@@ -60,11 +60,10 @@ form button:hover {
 
 ul {
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     gap: 0.30rem;
     height: 150px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .guest {
