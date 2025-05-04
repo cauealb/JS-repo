@@ -35,6 +35,8 @@ form.onsubmit = (e) => {
 
 const convertCurrency = function(currency, price, sybol) {
     try {
+        // Colocando dinâmicamente o span
+        description.textContent = `${sybol} 1 = R$${price}`
 
         footer.classList.add("show-result");
     } catch (error) {
