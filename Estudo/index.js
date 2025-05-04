@@ -19,5 +19,11 @@ form.addEventListener("submit", (e) => {
     // Usando replace com Regex
     const value = input.value;
     const regex = /\D+/g;
-    console.log(value.replace(regex, ""))
+    // console.log(value.replace(regex, ""))
+
+    if(regex.test(value)) {
+        console.log(value)
+    } else {
+        alert("Valor Inválido")
+    }
 })
