@@ -8,6 +8,7 @@ const form = document.querySelector("form");
 const amounInput = document.getElementById("amount");
 const currency = document.getElementById("currency");
 const footer = document.querySelector("main footer");
+const description = document.querySelector("footer span");
 
 amounInput.addEventListener("input", () => {
     // Validando input
@@ -34,6 +35,7 @@ form.onsubmit = (e) => {
 
 const convertCurrency = function(currency, price, sybol) {
     try {
+
         footer.classList.add("show-result");
     } catch (error) {
         // Incluindo uma função para remover uma classe, caso ele dê errado.
