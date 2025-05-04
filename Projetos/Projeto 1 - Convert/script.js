@@ -39,5 +39,8 @@ const convertCurrency = function(currency, price, sybol) {
         // Incluindo uma função para remover uma classe, caso ele dê errado.
         footer.classList.remove("show-result");
 
+        // Exibindo o erro
+        console.log(error);
+        alert("Não foi possível converter a moeda. Tenten novamente mais tarde!");
     }
 }
