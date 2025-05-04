@@ -7,6 +7,7 @@ const GBP = 7.50
 const form = document.querySelector("form");
 const amounInput = document.getElementById("amount");
 const currency = document.getElementById("currency");
+const footer = document.querySelector("main footer");
 
 amounInput.addEventListener("input", () => {
     // Validando input
