@@ -6,5 +6,7 @@ input.addEventListener("input", () => {
     const regex = /\D+/g
 
     // Match com regex
-    console.log(value.match(regex))
+    // console.log(value.match(regex))
+    // Usando test com regex
+    console.log(regex.test(value))
 })
