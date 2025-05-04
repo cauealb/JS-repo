@@ -12,9 +12,12 @@ const input = document.querySelector("input")
 // })
 
 // Criando um evento de submit para o form
-const form = document.querySelector("form");
+const form = document.querySelector("form")
 form.addEventListener("submit", (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    console.log("Oi")
+    // Usando replace com Regex
+    const value = input.value;
+    const regex = /\D+/g;
+    console.log(value.replace(regex, ""))
 })
