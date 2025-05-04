@@ -36,7 +36,8 @@ const convertCurrency = function(currency, price, sybol) {
     try {
         footer.classList.add("show-result");
     } catch (error) {
-        
-        
+        // Incluindo uma função para remover uma classe, caso ele dê errado.
+        footer.classList.remove("show-result");
+
     }
 }
