@@ -33,5 +33,10 @@ form.onsubmit = (e) => {
 }
 
 const convertCurrency = function(currency, price, sybol) {
-    console.log(currency, price, sybol)
+    try {
+        footer.classList.add("show-result");
+    } catch (error) {
+        
+        
+    }
 }
