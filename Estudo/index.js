@@ -1,5 +1,7 @@
 // Novo evento de input
 const input = document.querySelector("input")
 input.addEventListener("input", () => {
-    console.log(input.value)
+    // Expressões Regulares
+    const value = input.value
+    const regex = /\d+/g
 })
