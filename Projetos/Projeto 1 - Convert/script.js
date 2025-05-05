@@ -36,7 +36,7 @@ form.onsubmit = (e) => {
 const convertCurrency = function(currency, price, sybol) {
     try {
         // Colocando dinâmicamente o span
-        description.textContent = `${sybol} 1 = R$${price}`
+        description.textContent = `${sybol} 1 = ${formatCurrencyBRL(price)}`
 
         footer.classList.add("show-result");
     } catch (error) {
@@ -47,4 +47,12 @@ const convertCurrency = function(currency, price, sybol) {
         console.log(error);
         alert("Não foi possível converter a moeda. Tenten novamente mais tarde!");
     }
+}
+
+// Criando função para converter o preço pra real brasileiro.
+function formatCurrencyBRL(value) {
+    return Number(value).toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+    })
 }
