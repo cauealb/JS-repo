@@ -9,6 +9,7 @@ const amounInput = document.getElementById("amount");
 const currency = document.getElementById("currency");
 const footer = document.querySelector("main footer");
 const description = document.querySelector("footer span");
+const result = document.getElementById("result");
 
 amounInput.addEventListener("input", () => {
     // Validando input
@@ -37,6 +38,9 @@ const convertCurrency = function(currency, price, sybol) {
     try {
         // Colocando dinâmicamente o span
         description.textContent = `${sybol} 1 = ${formatCurrencyBRL(price)}`
+
+        let total = formatCurrencyBRL(amounInput.value * price).replace("R$", "")
+        result.textContent = `${total} Reais`
 
         footer.classList.add("show-result");
     } catch (error) {
