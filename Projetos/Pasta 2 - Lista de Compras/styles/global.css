@@ -25,3 +25,13 @@
     --paragraph: 1em 1.25em
     --link: 0.875em 1em
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    background-color: var(--background-primary);
+}
