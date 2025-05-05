@@ -1,0 +1,12 @@
+.show-logo {
+    display: none;
+}
+
+.hide-logo {
+    display: initial;
+}
+
+#hero {
+    background-color: yellow;
+}
+
