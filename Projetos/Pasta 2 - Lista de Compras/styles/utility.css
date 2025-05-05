@@ -1,0 +1,23 @@
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.grid {
+    display: flex;
+}
+
+.grid-col {
+    grid-auto-flow: column;
+}
+
+.gap-16 {
+    gap: 1em;
+}
+
+.gap-32 {
+    gap: 2em;
+}

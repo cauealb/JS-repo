@@ -34,4 +34,5 @@
 
 body  {
     background-color: var(--background-primary);
+    padding-inline: 1em;
 }
