@@ -15,10 +15,6 @@
     font: var(--link);
 }
 
-#input {
-    /* background-color: yellow; */
-}
-
 #input button {
     padding: 0.70em;
     border: none;
