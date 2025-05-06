@@ -1,0 +1,24 @@
+#listPurchases div {
+    background-color: var(--background-secondary);
+    padding: 1em;
+    border-radius: 8px;
+    gap: 0.80em;
+    align-items: center;
+}
+
+#listPurchases div > p {
+    flex-grow: 1;
+    font: var(--paragraph);
+    color: var(--content-secondary);
+}
+
+#listPurchases div > span {
+    background-image: url(../img/check-box-default.png);
+    width: 1em;
+    height: 1em;
+}
+
+#listPurchases div > img {
+    width: 1em;
+    height: 1em;
+}
