@@ -17,6 +17,10 @@
     border: 2px solid var(--border-hover);
 }
 
+.border-click {
+    background-color: red;
+}
+
 #listPurchases div > p {
     flex-grow: 1;
     font: var(--paragraph);
