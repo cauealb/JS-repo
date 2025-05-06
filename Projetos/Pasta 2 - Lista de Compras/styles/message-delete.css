@@ -1,0 +1,14 @@
+.message-delete {
+    background-color: var(--color-danger);
+    padding: 0.80em;
+    border-radius: 12px;
+    display: block;
+    gap: 0.80em;
+    margin-block: 2em;
+}
+
+.message-delete p {
+    flex-grow: 1;
+    font: var(--label);
+    color: var(--always-white);
+}
