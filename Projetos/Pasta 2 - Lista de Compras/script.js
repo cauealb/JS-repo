@@ -13,6 +13,9 @@ form.addEventListener("submit", (e) => {
     const liItem = document.createElement("li")
     const divItem = document.createElement("div")
     divItem.classList.add("flex")
+    liItem.append(divItem)
+    console.log(liItem)
+
     const spanitem = document.createComment("span")
     const pItem = document.createElement("p")
     const imgItem = document.createElement("img")
