@@ -2,13 +2,18 @@
     background-color: var(--color-danger);
     padding: 0.80em;
     border-radius: 12px;
-    display: block;
+    display: none;
     gap: 0.80em;
     margin-block: 2em;
+    align-items: center;
 }
 
 .message-delete p {
     flex-grow: 1;
     font: var(--label);
     color: var(--always-white);
+}
+
+.message-delete img:last-child {
+    cursor: pointer;
 }
