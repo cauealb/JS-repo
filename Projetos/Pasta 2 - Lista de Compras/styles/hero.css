@@ -15,6 +15,24 @@
     font: var(--link);
 }
 
-.informations {
-    gap: 0.50em;
+#input {
+    /* background-color: yellow; */
 }
+
+#input button {
+    padding: 0.70em;
+    border: none;
+    background-color: var(--color-brand);
+    border-radius: 8px;
+    font: var(--paragraph);
+    color: var(--always-white);
+}
+
+#input input {
+    padding: 0.70em;
+    border: 2px solid var(--border-primary);
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--content-tertiary);
+    font: var(--paragraph);
+} 
