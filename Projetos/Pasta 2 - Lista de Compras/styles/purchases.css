@@ -4,6 +4,12 @@
     border-radius: 8px;
     gap: 0.80em;
     align-items: center;
+    border: 2px solid var(--border-primary);
+    cursor: pointer;
+}
+
+#listPurchases div:hover {
+    border: 2px solid var(--border-hover);
 }
 
 #listPurchases div > p {
