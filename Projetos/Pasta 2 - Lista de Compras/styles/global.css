@@ -62,4 +62,8 @@ li {
     #input input {
         flex-grow: 1;
     }
+
+    #input button {
+        min-width: 30%;
+    }
 }
