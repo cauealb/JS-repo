@@ -1,6 +1,6 @@
 #listPurchases div {
     background-color: var(--background-secondary);
-    padding: 1em;
+    padding: 1.3em 0.90em;
     border-radius: 8px;
     gap: 0.80em;
     align-items: center;
