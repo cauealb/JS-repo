@@ -11,64 +11,66 @@
 </head>
 <body>
 
-    <header id="hero" class="flex flex-col gap-32">
-        <div class="show-logo">
-            <img src="img/logo.png" alt="Logo quicklist">
-        </div>
-        <div class="flex flex-col">
-            <div id="span-hero">
-                <span></span>
-                <span>Voltar</span>
+    <div class="container">
+        <header id="hero" class="flex flex-col gap-32">
+            <div class="show-logo">
+                <img src="img/logo.png" alt="Logo quicklist">
             </div>
-            <h1>Compras da semana</h1>
+            <div class="flex flex-col">
+                <div id="span-hero">
+                    <span></span>
+                    <span>Voltar</span>
+                </div>
+                <h1>Compras da semana</h1>
+            </div>
+            <form id="input" class="flex flex-col gap-16">
+                <input type="text" id="namePurchases" placeholder="Adicione um novo item">
+                <button type="submit">Adicionar item</button>
+            </form>
+        </header>
+
+        <main id="listPurchases">
+            <ul class="grid gap-16">
+                <li>
+                    <div class="flex">
+                        <!-- "img/check-box-default.png" -->
+                        <span></span>
+                        <p>Pão de forma</p>
+                        <img src="img/Trash.png" alt="Iconde de lixeira">
+                    </div>
+                </li>
+                <li>
+                    <div class="flex">
+                        <!-- "img/check-box-default.png" -->
+                        <span></span>
+                        <p>Café preto</p>
+                        <img src="img/Trash.png" alt="Iconde de lixeira">
+                    </div>
+                </li>
+                <li>
+                    <div class="flex">
+                        <!-- "img/check-box-default.png" -->
+                        <span></span>
+                        <p>Suco de laranja</p>
+                        <img src="img/Trash.png" alt="Iconde de lixeira">
+                    </div>
+                </li>
+                <li>
+                    <div class="flex">
+                        <!-- "img/check-box-default.png" -->
+                        <span></span>
+                        <p>Bolacha</p>
+                        <img src="img/Trash.png" alt="Iconde de lixeira">
+                    </div>
+                </li>
+            </ul>
+        </main>
+
+        <div class="message-delete flex">
+            <img src="img/warning-circle-filled.png" alt="">
+            <p>Item foi removido da lista</p>
+            <img src="img/delete-small.png" alt="">
         </div>
-        <form id="input" class="flex flex-col gap-16">
-            <input type="text" id="namePurchases" placeholder="Adicione um novo item">
-            <button type="submit">Adicionar item</button>
-        </form>
-    </header>
-
-    <main id="listPurchases">
-        <ul class="grid gap-16">
-            <li>
-                <div class="flex">
-                    <!-- "img/check-box-default.png" -->
-                    <span></span>
-                    <p>Pão de forma</p>
-                    <img src="img/Trash.png" alt="Iconde de lixeira">
-                </div>
-            </li>
-            <li>
-                <div class="flex">
-                    <!-- "img/check-box-default.png" -->
-                    <span></span>
-                    <p>Café preto</p>
-                    <img src="img/Trash.png" alt="Iconde de lixeira">
-                </div>
-            </li>
-            <li>
-                <div class="flex">
-                    <!-- "img/check-box-default.png" -->
-                    <span></span>
-                    <p>Suco de laranja</p>
-                    <img src="img/Trash.png" alt="Iconde de lixeira">
-                </div>
-            </li>
-            <li>
-                <div class="flex">
-                    <!-- "img/check-box-default.png" -->
-                    <span></span>
-                    <p>Bolacha</p>
-                    <img src="img/Trash.png" alt="Iconde de lixeira">
-                </div>
-            </li>
-        </ul>
-    </main>
-
-    <div class="message-delete flex">
-        <img src="img/warning-circle-filled.png" alt="">
-        <p>Item foi removido da lista</p>
-        <img src="img/delete-small.png" alt="">
     </div>
 
     <script src="script.js"></script>
