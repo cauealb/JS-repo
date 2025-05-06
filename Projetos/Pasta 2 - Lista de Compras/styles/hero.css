@@ -26,6 +26,12 @@
     border-radius: 8px;
     font: var(--paragraph);
     color: var(--always-white);
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+
+#input button:hover {
+    background-color: var(--color-brand-hover);
 }
 
 #input input {
@@ -35,4 +41,13 @@
     background-color: transparent;
     color: var(--content-tertiary);
     font: var(--paragraph);
+    outline: none;
 } 
+
+#input input:hover {
+    border: 2px solid var(--border-hover);
+}
+
+#input input:focus {
+    border: 2px solid var(--color-brand);
+}
