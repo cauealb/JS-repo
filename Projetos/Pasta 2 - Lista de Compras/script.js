@@ -13,6 +13,11 @@ form.addEventListener("submit", (e) => {
     const liItem = document.createElement("li")
     const divItem = document.createElement("div")
     divItem.classList.add("flex")
-    
+    const spanitem = document.createComment("span")
+    const pItem = document.createElement("p")
+    const imgItem = document.createElement("img")
+
+    imgItem.setAttribute("src", "img/Trash.png")
+    imgItem.setAttribute("alt", "Icone de lixeira")
 
 })
