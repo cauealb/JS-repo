@@ -22,10 +22,10 @@
     --font-Inter: "Inter", sans-serif;
 
     /* Inter */
-    --title: 1.5em 2em var(--font-Inter);
-    --label: 1em 1.25em var(--font-Inter);
-    --paragraph: 1em 1.25em var(--font-Inter);
-    --link: 0.875em 1em var(--font-Inter);
+    --title: 700 1.5em/2em var(--font-Inter);
+    --label: 600 1em/1.25em var(--font-Inter);
+    --paragraph: 500 1em/1.25em var(--font-Inter);
+    --link: 500 0.875em/1em var(--font-Inter);
 }
 
 * {
@@ -37,4 +37,9 @@
 body  {
     background-color: var(--background-primary);
     padding-inline: 2em;
+}
+
+h1 {
+    font: var(--title);
+    color: var(--content-primary);
 }
