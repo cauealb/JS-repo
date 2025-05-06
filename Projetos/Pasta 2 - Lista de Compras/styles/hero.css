@@ -10,3 +10,11 @@
     padding-block: 3em;
 }
 
+#span-hero {
+    color: var(--color-brand);
+    font: var(--link);
+}
+
+.informations {
+    gap: 0.50em;
+}
