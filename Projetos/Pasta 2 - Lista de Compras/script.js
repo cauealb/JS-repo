@@ -10,4 +10,9 @@ form.addEventListener("submit", (e) => {
         return
     }
 
+    const liItem = document.createElement("li")
+    const divItem = document.createElement("div")
+    divItem.classList.add("flex")
+    
+
 })
