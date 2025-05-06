@@ -54,4 +54,12 @@ li {
         max-width: 40em;
         margin-inline: auto;
     }
+
+    #input {
+        flex-direction: row;
+    }
+
+    #input input {
+        flex-grow: 1;
+    }
 }
