@@ -10,22 +10,25 @@ form.addEventListener("submit", (e) => {
         return
     }
 
-    const liItem = document.createElement("li")
-    const divItem = document.createElement("div")
-    divItem.classList.add("flex")
-    liItem.append(divItem)
+    const liItem = document.createElement("li");
+    const divItem = document.createElement("div");
+    divItem.classList.add("flex");
+    liItem.append(divItem);
     
 
-    const spanitem = document.createComment("span")
-    const pItem = document.createElement("p")
-    const imgItem = document.createElement("img")
+    const spanitem = document.createElement("span");
 
-    imgItem.setAttribute("src", "img/Trash.png")
-    imgItem.setAttribute("alt", "Icone de lixeira")
+    const pItem = document.createElement("p");
+    pItem.textContent = input.value;
 
-    divItem.append(spanitem)
-    divItem.append(pItem)
-    divItem.append(imgItem)
+    const imgItem = document.createElement("img");
+
+    imgItem.setAttribute("src", "img/Trash.png");
+    imgItem.setAttribute("alt", "Icone de lixeira");
+
+    divItem.prepend(spanitem);
+    divItem.append(pItem);
+    divItem.append(imgItem);
 
 
     console.log(liItem)
