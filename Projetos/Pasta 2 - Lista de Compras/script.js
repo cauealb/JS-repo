@@ -4,6 +4,7 @@ const listUl = document.querySelector("ul");
 const trashIcon = document.getElementsByClassName("trash");
 const message_delete = document.querySelector("#message");
 const message_delete_icon_exit = document.querySelector("#message img:last-child");
+const itemDivList = document.querySelectorAll("#listPurchases div");
 
 // Evento de Load
 addEventListener("load", () => {
@@ -22,6 +23,7 @@ form.addEventListener("submit", (e) => {
     const liItem = document.createElement("li");
     const divItem = document.createElement("div");
     divItem.classList.add("flex");
+    divItem.classList.add("border-normal")
     liItem.append(divItem);
     
 
@@ -42,8 +44,6 @@ form.addEventListener("submit", (e) => {
 
     listUl.prepend(liItem);
     input.value = "";
-
-    console.log(trashIcon)
 });
 
 // Evento da apaarecer a mensagem quando apaga algo da lista
@@ -51,14 +51,18 @@ listUl.addEventListener("click", (e) => {
     if(e.target.classList.contains("trash")) {
         message_delete.classList.toggle("message-delete-show")
         message_delete.classList.toggle("message-delete-hide")
+        return
+    }
+
+    if(e.target.classList.contains("flex")) {
+        e.target.classList.toggle("border-click")
+        e.target.classList.toggle("border-normal")
+        console.log(e.target.classList)
     }
 })
 
-
-
 // Evento para desaparecer a messagem de item deletado
 message_delete_icon_exit.addEventListener("click", () => {
-    console.log(trashIcon)
     message_delete.classList.toggle("message-delete-show")
     message_delete.classList.toggle("message-delete-hide")
 })

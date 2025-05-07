@@ -9,16 +9,19 @@
     border-radius: 8px;
     gap: 0.80em;
     align-items: center;
-    border: 2px solid var(--border-primary);
     cursor: pointer;
 }
 
-#listPurchases div:hover {
-    border: 2px solid var(--border-hover);
+.border-normal {
+    border: 2px solid var(--border-primary);
 }
 
+/* #listPurchases div:hover {
+    border: 2px solid var(--border-hover);
+} */
+
 .border-click {
-    background-color: red;
+    border: 2px solid var(--color-brand);
 }
 
 #listPurchases div > p {
