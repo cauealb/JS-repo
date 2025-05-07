@@ -46,15 +46,15 @@ form.addEventListener("submit", (e) => {
     input.value = "";
 });
 
-// Evento da apaarecer a mensagem quando apaga algo da lista
+// Evento da div
 listUl.addEventListener("click", (e) => {
-    if(e.target.classList.contains("trash")) {
+    if(e.target.tagName === "IMG") {
         message_delete.classList.toggle("message-delete-show")
         message_delete.classList.toggle("message-delete-hide")
         return
     }
 
-    if(e.target.classList.contains("flex")) {
+    if(e.target.tagName === "DIV") {
         e.target.classList.toggle("border-click")
         e.target.classList.toggle("border-normal")
         console.log(e.target.classList)
