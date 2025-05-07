@@ -47,13 +47,14 @@ form.addEventListener("submit", (e) => {
 });
 
 // Evento da apaarecer a mensagem quando apaga algo da lista
-trashIcon.forEach(icon => {
-    icon.addEventListener("click", () => {
-        console.log(trashIcon)
+listUl.addEventListener("click", (e) => {
+    if(e.target.classList.contains("trash")) {
         message_delete.classList.toggle("message-delete-show")
         message_delete.classList.toggle("message-delete-hide")
-    })
+    }
 })
+
+
 
 // Evento para desaparecer a messagem de item deletado
 message_delete_icon_exit.addEventListener("click", () => {
