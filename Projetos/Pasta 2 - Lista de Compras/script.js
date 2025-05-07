@@ -32,4 +32,5 @@ form.addEventListener("submit", (e) => {
     divItem.append(imgItem);
 
     listUl.prepend(liItem)
+    input.value = ""
 })
