@@ -14,7 +14,7 @@ form.addEventListener("submit", (e) => {
     const divItem = document.createElement("div")
     divItem.classList.add("flex")
     liItem.append(divItem)
-    console.log(liItem)
+    
 
     const spanitem = document.createComment("span")
     const pItem = document.createElement("p")
@@ -23,4 +23,10 @@ form.addEventListener("submit", (e) => {
     imgItem.setAttribute("src", "img/Trash.png")
     imgItem.setAttribute("alt", "Icone de lixeira")
 
+    divItem.append(spanitem)
+    divItem.append(pItem)
+    divItem.append(imgItem)
+
+
+    console.log(liItem)
 })
