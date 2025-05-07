@@ -1,5 +1,6 @@
 const form = document.querySelector("#input");
 const input = document.querySelector("#namePurchases");
+const listUl = document.querySelector("ul");
 
 // Eventos
 form.addEventListener("submit", (e) => {
@@ -30,6 +31,5 @@ form.addEventListener("submit", (e) => {
     divItem.append(pItem);
     divItem.append(imgItem);
 
-
-    console.log(liItem)
+    listUl.prepend(liItem)
 })
