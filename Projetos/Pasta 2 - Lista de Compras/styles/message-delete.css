@@ -1,19 +1,23 @@
-.message-delete {
+.message-delete-show {
     background-color: var(--color-danger);
     padding: 0.80em;
     border-radius: 12px;
-    display: none;
     gap: 0.80em;
     margin-block: 2em;
     align-items: center;
+    display: flex;
 }
 
-.message-delete p {
+.message-delete-hide {
+    display: none;
+}
+
+.message-delete-show p {
     flex-grow: 1;
     font: var(--label);
     color: var(--always-white);
 }
 
-.message-delete img:last-child {
+.message-delete-show img:last-child {
     cursor: pointer;
 }

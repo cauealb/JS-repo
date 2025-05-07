@@ -1,8 +1,10 @@
 const form = document.querySelector("#input");
 const input = document.querySelector("#namePurchases");
 const listUl = document.querySelector("ul");
+const trashIcon = document.querySelectorAll("#listPurchases li div img:last-child");
+const message_delete = document.querySelector("#message");
 
-// Eventos
+// Eventos de submit
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -31,6 +33,14 @@ form.addEventListener("submit", (e) => {
     divItem.append(pItem);
     divItem.append(imgItem);
 
-    listUl.prepend(liItem)
-    input.value = ""
+    listUl.prepend(liItem);
+    input.value = "";
+});
+
+// Evento da apaarecer a mensagem quando apaga algo da lista
+trashIcon.forEach(icon => {
+    icon.addEventListener("click", () => {
+        message_delete.classList.toggle("message-delete-show")
+        message_delete.classList.toggle("message-delete-hide")
+    })
 })
