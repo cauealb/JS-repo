@@ -5,6 +5,9 @@ const message_delete = document.querySelector("#message");
 const message_delete_icon_exit = document.querySelector("#message img:last-child");
 const mainList = document.querySelector("main")
 
+// Contadores
+let contFeitas = 0;
+let contNaoFeitas = 0;
 
 // Eventos de submit
 form.addEventListener("submit", (e) => {
@@ -31,6 +34,7 @@ listUl.addEventListener("click", (e) => {
 
     if(e.target.tagName === "SPAN") {
         e.target.classList.toggle("active-checkbox")
+        contFeitas++
         return
     }
 
@@ -39,6 +43,8 @@ listUl.addEventListener("click", (e) => {
         e.target.classList.toggle("border-normal")
         return
     }
+
+    
 })
 
 // Evento de scoll da lista
