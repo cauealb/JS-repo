@@ -3,7 +3,7 @@
     overflow-y: auto;
 }
 
-#listPurchases div {
+#listPurchases li div {
     background-color: var(--background-secondary);
     padding: 1.3em 0.90em;
     border-radius: 8px;
