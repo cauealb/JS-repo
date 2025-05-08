@@ -65,7 +65,9 @@ mainList.addEventListener("scroll", (e) => {
             top: 0,
             behavior: "smooth"
         })
+        input.focus()
     }
+
 })
 
 // Evento para desaparecer a messagem de item deletado
