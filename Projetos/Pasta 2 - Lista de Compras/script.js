@@ -1,12 +1,9 @@
 const form = document.querySelector("#input");
 const input = document.querySelector("#namePurchases");
 const listUl = document.querySelector("ul");
-const trashIcon = document.getElementsByClassName("trash");
 const message_delete = document.querySelector("#message");
 const message_delete_icon_exit = document.querySelector("#message img:last-child");
-const itemDivList = document.querySelectorAll("#listPurchases div");
 const mainList = document.querySelector("main")
-const itemCheck = document.getElementsByClassName("check");
 
 
 // Eventos de submit
