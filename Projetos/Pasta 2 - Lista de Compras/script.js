@@ -32,6 +32,7 @@ listUl.addEventListener("click", (e) => {
 
     if(e.target.tagName === "SPAN") {
         e.target.classList.toggle("active-checkbox")
+        return
     }
 
     if(e.target.tagName === "DIV") {
