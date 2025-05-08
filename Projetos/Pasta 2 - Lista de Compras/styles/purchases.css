@@ -3,6 +3,12 @@
     overflow-y: auto;
 }
 
+#cont {
+    justify-content: space-between;
+    text-align: center;
+    padding-block: 0 0.50em;
+}
+
 #listPurchases li div {
     background-color: var(--background-secondary);
     padding: 1.3em 0.90em;
@@ -16,9 +22,6 @@
     border: 2px solid var(--border-primary);
 }
 
-/* #listPurchases div:hover {
-    border: 2px solid var(--border-hover);
-} */
 
 .border-click {
     border: 2px solid var(--color-brand);
