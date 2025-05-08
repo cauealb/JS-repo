@@ -6,6 +6,7 @@ const message_delete = document.querySelector("#message");
 const message_delete_icon_exit = document.querySelector("#message img:last-child");
 const itemDivList = document.querySelectorAll("#listPurchases div");
 const mainList = document.querySelector("main")
+const itemCheck = document.getElementsByClassName("check");
 
 
 // Eventos de submit
@@ -16,30 +17,9 @@ form.addEventListener("submit", (e) => {
         alert("Digite sua compra!");
         return
     }
+    const retorno = createNewPurchase();
 
-    const liItem = document.createElement("li");
-    const divItem = document.createElement("div");
-    divItem.classList.add("flex");
-    divItem.classList.add("border-normal")
-    liItem.append(divItem);
-    
-
-    const spanitem = document.createElement("span");
-
-    const pItem = document.createElement("p");
-    pItem.textContent = input.value;
-
-    const imgItem = document.createElement("img");
-
-    imgItem.setAttribute("src", "img/Trash.png");
-    imgItem.setAttribute("alt", "Icone de lixeira");
-    imgItem.classList.add("trash")
-
-    divItem.prepend(spanitem);
-    divItem.append(pItem);
-    divItem.append(imgItem);
-
-    listUl.prepend(liItem);
+    listUl.prepend(retorno);
     input.value = "";
 });
 
@@ -54,7 +34,7 @@ listUl.addEventListener("click", (e) => {
     if(e.target.tagName === "DIV") {
         e.target.classList.toggle("border-click")
         e.target.classList.toggle("border-normal")
-        console.log(e.target.classList, "Olaaaaaaaaaa")
+        return
     }
 })
 
@@ -75,4 +55,32 @@ message_delete_icon_exit.addEventListener("click", () => {
     message_delete.classList.toggle("message-delete-show")
     message_delete.classList.toggle("message-delete-hide")
 })
+
+
+// função que abstrai a criação de li
+
+function createNewPurchase() {
+    const liItem = document.createElement("li");
+    const divItem = document.createElement("div");
+    divItem.classList.add("flex");
+    divItem.classList.add("border-normal")
+    liItem.append(divItem);
+
+    const spanitem = document.createElement("span");
+    spanitem.classList.add("check");
+
+    const pItem = document.createElement("p");
+    pItem.textContent = input.value;
+
+    const imgItem = document.createElement("img");
+    imgItem.setAttribute("src", "img/Trash.png");
+    imgItem.setAttribute("alt", "Icone de lixeira");
+    imgItem.classList.add("trash")
+
+    divItem.prepend(spanitem);
+    divItem.append(pItem);
+    divItem.append(imgItem);
+
+    return liItem;
+}
 
