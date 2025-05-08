@@ -60,7 +60,12 @@ listUl.addEventListener("click", (e) => {
 
 // Evento de scoll da lista
 mainList.addEventListener("scroll", (e) => {
-    
+    if(mainList.scrollTop > 284) {
+        mainList.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
 })
 
 // Evento para desaparecer a messagem de item deletado
