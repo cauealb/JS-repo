@@ -25,6 +25,8 @@ listUl.addEventListener("click", (e) => {
     if(e.target.tagName === "IMG") {
         message_delete.classList.add("message-delete-show")
         message_delete.classList.remove("message-delete-hide")
+
+        e.target.closest("li").remove()
         return
     }
 
@@ -53,9 +55,7 @@ message_delete_icon_exit.addEventListener("click", () => {
     message_delete.classList.toggle("message-delete-hide")
 })
 
-
 // função que abstrai a criação de li
-
 function createNewPurchase() {
     const liItem = document.createElement("li");
     const divItem = document.createElement("div");
