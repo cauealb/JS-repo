@@ -31,22 +31,23 @@
 }
 
 #listPurchases div > span {
-    background-image: url(../img/check-box-default.png);
     width: 1.1em;
     height: 1em;
+}
+
+.normal-checkbox {
+    background-image: url(../img/check-box-default.png);
 }
 
 .active-checkbox {
     background-image: url(../img/check-box-selected.png);
-    width: 1.1em;
-    height: 1em;
 }
 
-#listPurchases div > span:hover {
+/* #listPurchases div > span:hover {
     background-image: url(../img/check-box-hover.png);
     width: 1.1em;
     height: 1em;
-}
+} */
 
 #listPurchases div > img {
     width: 1em;
