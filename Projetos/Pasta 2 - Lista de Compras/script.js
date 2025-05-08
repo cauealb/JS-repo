@@ -23,8 +23,7 @@ form.addEventListener("submit", (e) => {
 // Evento da div
 listUl.addEventListener("click", (e) => {
     if(e.target.tagName === "IMG") {
-        message_delete.classList.add("message-delete-show")
-        message_delete.classList.remove("message-delete-hide")
+        hideOrShowMessageDelete();
 
         e.target.closest("li").remove()
         return
