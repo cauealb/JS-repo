@@ -46,15 +46,15 @@ form.addEventListener("submit", (e) => {
 // Evento da div
 listUl.addEventListener("click", (e) => {
     if(e.target.tagName === "IMG") {
-        message_delete.classList.toggle("message-delete-show")
-        message_delete.classList.toggle("message-delete-hide")
+        message_delete.classList.add("message-delete-show")
+        message_delete.classList.remove("message-delete-hide")
         return
     }
 
     if(e.target.tagName === "DIV") {
         e.target.classList.toggle("border-click")
         e.target.classList.toggle("border-normal")
-        console.log(e.target.classList)
+        console.log(e.target.classList, "Olaaaaaaaaaa")
     }
 })
 
