@@ -56,8 +56,7 @@ mainList.addEventListener("scroll", (e) => {
 
 // Evento para desaparecer a messagem de item deletado
 message_delete_icon_exit.addEventListener("click", () => {
-    message_delete.classList.toggle("message-delete-show")
-    message_delete.classList.toggle("message-delete-hide")
+    hideOrShowMessageDelete();
 })
 
 // função que abstrai a criação de li
@@ -86,3 +85,9 @@ function createNewPurchase() {
     return liItem;
 }
 
+
+// Função que ativa de desativa a menssagem de deltedo
+function hideOrShowMessageDelete() {
+    message_delete.classList.toggle("message-delete-show")
+    message_delete.classList.toggle("message-delete-hide")
+}
