@@ -5,11 +5,8 @@ const trashIcon = document.getElementsByClassName("trash");
 const message_delete = document.querySelector("#message");
 const message_delete_icon_exit = document.querySelector("#message img:last-child");
 const itemDivList = document.querySelectorAll("#listPurchases div");
+const mainList = document.querySelector("main")
 
-// Evento de Load
-addEventListener("load", () => {
-    console.log(trashIcon)
-})
 
 // Eventos de submit
 form.addEventListener("submit", (e) => {
@@ -61,8 +58,14 @@ listUl.addEventListener("click", (e) => {
     }
 })
 
+// Evento de scoll da lista
+mainList.addEventListener("scroll", (e) => {
+    
+})
+
 // Evento para desaparecer a messagem de item deletado
 message_delete_icon_exit.addEventListener("click", () => {
     message_delete.classList.toggle("message-delete-show")
     message_delete.classList.toggle("message-delete-hide")
 })
+
