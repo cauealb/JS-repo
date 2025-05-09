@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz de Perguntas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz de Perguntas</h1>
+    
+    <div id="quiz-container">
+      <div id="question-container">
+        <p id="question">Pergunta aqui</p>
+        <div id="options-container">
+          <!-- Botões de opções irão aqui -->
+        </div>
+      </div>
+      <div id="controls">
+        <button id="next-btn" disabled>Próxima</button>
+      </div>
+    </div>
+
+    <div id="result-container" class="hidden">
+      <h2>Você acertou <span id="score"></span> de <span id="total"></span> perguntas!</h2>
+      <button id="restart-btn">Reiniciar Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
