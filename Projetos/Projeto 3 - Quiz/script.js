@@ -41,11 +41,12 @@ addEventListener("load", (e) => {
     }
 })
 
-document.addEventListener("click", () => {
-    currentQuetions++
-    newQuestion();
+arrBtn.forEach(item => {
+    item.onclick = () => {
+        currentQuetions++
+        newQuestion();
+    }
 })
-
 
 function newQuestion() {
     switch (currentQuetions) {
