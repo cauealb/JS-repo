@@ -75,5 +75,9 @@ function newQuestion() {
         arrBtn[i].textContent = Quiz[currentQuetions].options[i]
     }
 
-    nextButton.setAttribute("disabled", "true")
+    if(currentQuetions === Quiz.length - 1) {
+        nextButton.textContent = "Finalizar"
+    } else {
+        nextButton.setAttribute("disabled", "true")
+    }
 }
