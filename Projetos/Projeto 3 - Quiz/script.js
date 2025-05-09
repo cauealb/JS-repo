@@ -4,3 +4,7 @@ const placeButton = document.getElementById("options-container");
 
 // Variável que controla as perguntas
 const currentQuetions = 0
+
+document.addEventListener("click", () => {
+    currentQuetions++
+})
