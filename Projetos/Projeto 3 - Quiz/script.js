@@ -44,11 +44,17 @@ addEventListener("load", (e) => {
 
 arrBtn.forEach(item => {
     item.onclick = (e) => {
-        currentQuetions++
-        newQuestion();
-
-        nextButton.removeAttribute("disabled")
+        nextButton.removeAttribute("disabled");
     }
+});
+
+nextButton.addEventListener("click", () => {
+    if(nextButton.setAttribute("disabled", "true")) {
+        return
+    }
+
+    currentQuetions++
+    newQuestion();
 })
 
 function newQuestion() {
@@ -68,4 +74,6 @@ function newQuestion() {
     for(let i = 0; i < Quiz[currentQuetions].options.length; i++) {
         arrBtn[i].textContent = Quiz[currentQuetions].options[i]
     }
+
+    nextButton.setAttribute("disabled", "true")
 }
