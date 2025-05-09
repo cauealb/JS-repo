@@ -16,20 +16,20 @@ let arrBtn = [btn1, btn2, btn3];
 const Quiz = [
     {
         id: 1,
-        question: "Messi?",
-        options: ["Não", "Sim", "Talvez"],
+        question: "Qual é a capital do Brasil?",
+        options: ["Rio de Janeiro", "São Paulo", "Brasília"],
         answer: 1
     },
     {
         id: 2,
-        question: "Cristiano Ronaldo?",
-        options: ["Não", "Sim", "Talvez"],
+        question: "Qual linguagem roda no navegador?",
+        options: ["Python", "C++", "JavaScript"],
         answer: 0
     },
     {
         id: 3,
-        question: "Neymar?",
-        options: ["Não", "Sim", "Talvez"],
+        question: "Qual desses é um framework para React?",
+        options: ["Django", "Next.js", "Laravel"],
         answer: 2
     }
 ]
