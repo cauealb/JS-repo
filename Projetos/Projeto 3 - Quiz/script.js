@@ -5,8 +5,14 @@ const placeButton = document.getElementById("options-container");
 // Variável que controla as perguntas
 let currentQuetions = 0
 
-// Estrutura das perguntas
+// Criando botões para as opções
+const btn1 = document.createElement("button");
+const btn2 = document.createElement("button");
+const btn3 = document.createElement("button");
+let arrBtn = [btn1, btn2, btn3];
 
+
+// Estrutura das perguntas
 const Quiz = [
     {
         id: 1,
@@ -28,9 +34,11 @@ const Quiz = [
     }
 ]
 
-addEventListener("load", () => {
+addEventListener("load", (e) => {
     newQuestion();
-    console.log(question.textContent)
+    for(let i = 0; i < 3; i++) {
+        placeButton.append(arrBtn[i])
+    }
 })
 
 document.addEventListener("click", () => {
@@ -42,28 +50,18 @@ document.addEventListener("click", () => {
 function newQuestion() {
     switch (currentQuetions) {
         case 0:
-            question.textContent = Quiz[0].question
+            question.textContent = Quiz[currentQuetions].question
             break;
         case 1:
-            question.textContent = Quiz[1].question
+            question.textContent = Quiz[currentQuetions].question
             break;
         case 2:
-            question.textContent = Quiz[2].question
+            question.textContent = Quiz[currentQuetions].question
             break;
     }
-}
 
-function createOptions() {
-    const btn1 = document.createElement("button")
-    const btn2 = document.createElement("button")
-    const btn3 = document.createElement("button")
-
-    for(let i = 0; i < Quiz[0].options.length; i++) {
-        
-    }
-
-    switch (currentQuetions) {
-        case 0:
-
+    // Modifica os botões
+    for(let i = 0; i < Quiz[currentQuetions].options.length; i++) {
+        arrBtn[i].textContent = Quiz[currentQuetions].options[i]
     }
 }
