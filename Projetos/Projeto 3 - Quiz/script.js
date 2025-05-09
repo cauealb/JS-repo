@@ -1,6 +1,7 @@
 // Pega elementos
 const question = document.getElementById("question");
 const placeButton = document.getElementById("options-container");
+const nextButton = document.getElementById("next-btn");
 
 // Variável que controla as perguntas
 let currentQuetions = 0
@@ -42,9 +43,11 @@ addEventListener("load", (e) => {
 })
 
 arrBtn.forEach(item => {
-    item.onclick = () => {
+    item.onclick = (e) => {
         currentQuetions++
         newQuestion();
+
+        nextButton.removeAttribute("disabled")
     }
 })
 
