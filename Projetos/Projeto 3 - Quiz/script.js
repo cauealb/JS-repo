@@ -52,3 +52,18 @@ function newQuestion() {
             break;
     }
 }
+
+function createOptions() {
+    const btn1 = document.createElement("button")
+    const btn2 = document.createElement("button")
+    const btn3 = document.createElement("button")
+
+    for(let i = 0; i < Quiz[0].options.length; i++) {
+        
+    }
+
+    switch (currentQuetions) {
+        case 0:
+
+    }
+}
