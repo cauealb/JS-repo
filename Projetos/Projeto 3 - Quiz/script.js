@@ -40,6 +40,12 @@ const Quiz = [
         question: "Qual desses é um framework para React?",
         options: ["Django", "Next.js", "Laravel"],
         answer: 1
+    },
+    {
+        id: 4,
+        question: "Qual é o esporte mais jogado do mundo?",
+        options: ["Basquete", "Futebol", "Vólei"],
+        answer: 1
     }
 ]
 
