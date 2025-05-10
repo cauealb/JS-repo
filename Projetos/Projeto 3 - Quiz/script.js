@@ -3,8 +3,11 @@ const question = document.getElementById("question");
 const placeButton = document.getElementById("options-container");
 const nextButton = document.getElementById("next-btn");
 
-// Variável que controla as perguntas
+// Variável que controla as perguntas e as resposta
 let currentQuetions = 0
+let currentAnswer = 0
+
+// Váriaveis para a pontuação
 
 // Criando botões para as opções
 const btn1 = document.createElement("button");
@@ -45,7 +48,12 @@ addEventListener("load", (e) => {
 arrBtn.forEach(item => {
     item.onclick = (e) => {
         nextButton.removeAttribute("disabled");
-    }
+        currentAnswer = item.textContent
+        const answerNow = Quiz[currentQuetions].answer
+
+        if(currentAnswer === Quiz[currentQuetions].options[answerNow]) {
+
+        }
 });
 
 nextButton.addEventListener("click", () => {
