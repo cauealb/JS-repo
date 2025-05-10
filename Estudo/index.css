@@ -1,84 +1,21 @@
-html, body {
-    height: 100vh;
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-}
-
-main {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    width: 30rem;
-    /* background-color: yellow; */
-}
-
-main h1 {
-    font-size: 2.5rem;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-main > * {
-    width: 300px;
 }
 
 form {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    gap: 0.30rem;
-    width: 100%;
-    /* background-color: red; */
-}
-
-form input {
-    background-color: rgb(68, 68, 68);
-    border: none;
-    outline: none;
-    padding: 0.80rem;
+    display: grid;
+    gap: 1em;
+    max-width: 500px;
+    box-shadow: 0 1px 8px black;
+    padding: 1em;
     border-radius: 8px;
-    color: white;
-    flex-grow: 1;
+    margin-block: 3em;
 }
 
-form button {
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: white;
-    background-color: rgb(127, 35, 212);
-    padding: 0.90rem;
-    transition: all 0.1s linear;
-}
-
-form button:hover {
-    background-color: rgb(143, 48, 231);
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.30rem;
-    height: 150px;
-    /* overflow-y: scroll; */
-}
-
-.guest {
-    list-style: none;
-    background-color: rgb(68, 68, 68);
-    padding: 0.70rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.1s linear;
-}
-
-.guest:hover {
-    background-color: rgb(82, 82, 82);
-}
-
-.input-error {
-    border: 4px solid red;
+label {
+    display: grid;
+    font-size: 2em;
 }
