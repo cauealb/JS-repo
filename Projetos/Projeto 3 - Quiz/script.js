@@ -8,6 +8,7 @@ let currentQuetions = 0
 let currentAnswer = 0
 
 // Váriaveis para a pontuação
+let pointsWin = 0
 
 // Criando botões para as opções
 const btn1 = document.createElement("button");
@@ -22,7 +23,7 @@ const Quiz = [
         id: 1,
         question: "Qual é a capital do Brasil?",
         options: ["Rio de Janeiro", "São Paulo", "Brasília"],
-        answer: 1
+        answer: 2
     },
     {
         id: 2,
@@ -46,15 +47,18 @@ addEventListener("load", (e) => {
 })
 
 arrBtn.forEach(item => {
-    item.onclick = (e) => {
+    item.onclick = () => {
         nextButton.removeAttribute("disabled");
         currentAnswer = item.textContent
         const answerNow = Quiz[currentQuetions].answer
 
-        if(currentAnswer === Quiz[currentQuetions].options[answerNow]) {
 
+        if(currentAnswer === Quiz[currentQuetions].options[answerNow]) {
+            pointsWin++
+            return
         }
-});
+    }
+})
 
 nextButton.addEventListener("click", () => {
     if(nextButton.setAttribute("disabled", "true")) {
