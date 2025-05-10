@@ -45,7 +45,8 @@ const Quiz = [
 
 addEventListener("load", (e) => {
     newQuestion();
-    for(let i = 0; i < 3; i++) {
+
+    for(let i = 0; i < Quiz.length; i++) {
         arrBtn[i].classList.add("border-normal")
         placeButton.append(arrBtn[i])
     }
@@ -69,9 +70,6 @@ arrBtn.forEach(item => {
 })
 
 nextButton.addEventListener("click", () => {
-    if(nextButton.setAttribute("disabled", "true")) {
-        return
-    }
 
     if(currentQuetions === Quiz.length - 1) {
         result.classList.remove("hidden")
@@ -119,7 +117,7 @@ function newQuestion() {
 }
 
 function resetBorderSelect() {
-    for(let i = 0; i < 3; i++) {
+    for(let i = 0; i < Quiz[currentQuetions].options.length; i++) {
         arrBtn[i].classList.remove("border-select");
     }
 }
