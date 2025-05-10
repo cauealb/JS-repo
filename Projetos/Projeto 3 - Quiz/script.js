@@ -29,13 +29,13 @@ const Quiz = [
         id: 2,
         question: "Qual linguagem roda no navegador?",
         options: ["Python", "C++", "JavaScript"],
-        answer: 0
+        answer: 2
     },
     {
         id: 3,
         question: "Qual desses é um framework para React?",
         options: ["Django", "Next.js", "Laravel"],
-        answer: 2
+        answer: 1
     }
 ]
 
@@ -47,11 +47,10 @@ addEventListener("load", (e) => {
 })
 
 arrBtn.forEach(item => {
-    item.onclick = () => {
+    item.onclick = (e) => {
         nextButton.removeAttribute("disabled");
-        currentAnswer = item.textContent
+        currentAnswer = e.target.textContent
         const answerNow = Quiz[currentQuetions].answer
-
 
         if(currentAnswer === Quiz[currentQuetions].options[answerNow]) {
             pointsWin++
