@@ -50,7 +50,11 @@ addEventListener("load", (e) => {
 arrBtn.forEach(item => {
     item.onclick = (e) => {
         nextButton.removeAttribute("disabled");
-        e.target.classList.add("border-select")
+        // if(e.target.classList.contains("border-Select")) {
+
+        // }
+
+        e.target.classList.toggle("border-select")
 
         currentAnswer = e.target.textContent
         const answerNow = Quiz[currentQuetions].answer
@@ -67,31 +71,38 @@ nextButton.addEventListener("click", () => {
         return
     }
 
-    currentQuetions++
+    currentQuetions++;
     newQuestion();
 })
 
 function newQuestion() {
     switch (currentQuetions) {
         case 0:
-            question.textContent = Quiz[currentQuetions].question
+            question.textContent = Quiz[currentQuetions].question;
             break;
         case 1:
-            question.textContent = Quiz[currentQuetions].question
+            question.textContent = Quiz[currentQuetions].question;
             break;
         case 2:
-            question.textContent = Quiz[currentQuetions].question
+            question.textContent = Quiz[currentQuetions].question;
             break;
     }
+    resetBorderSelect();
 
     // Modifica os botões
     for(let i = 0; i < Quiz[currentQuetions].options.length; i++) {
-        arrBtn[i].textContent = Quiz[currentQuetions].options[i]
+        arrBtn[i].textContent = Quiz[currentQuetions].options[i];
     }
 
     if(currentQuetions === Quiz.length - 1) {
-        nextButton.textContent = "Finalizar"
+        nextButton.textContent = "Finalizar";
     } else {
-        nextButton.setAttribute("disabled", "true")
+        nextButton.setAttribute("disabled", "true");
+    }
+}
+
+function resetBorderSelect() {
+    for(let i = 0; i < 3; i++) {
+        arrBtn[i].classList.remove("border-select");
     }
 }
