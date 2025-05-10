@@ -4,8 +4,8 @@ const placeButton = document.getElementById("options-container");
 const nextButton = document.getElementById("next-btn");
 const result = document.querySelector("#result-container");
 const resetButton = document.querySelector("#restart-btn");
-const total = document.getElementById("total");
-const score = document.getElementById("score");
+let score = document.getElementById("score");
+let total = document.getElementById("total");
 
 // Variável que controla as perguntas e as resposta
 let currentQuetions = 0
@@ -127,5 +127,6 @@ function resetBorderSelect() {
 function resetQuestion() {
     currentQuetions = 0;
     currentAnswer = 0;
+    pointsWin = 0
     newQuestion();
 }
