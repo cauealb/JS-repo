@@ -10,12 +10,23 @@ form {
     gap: 1em;
     max-width: 500px;
     box-shadow: 0 1px 8px black;
-    padding: 1em;
+    padding: 2em;
     border-radius: 8px;
     margin-block: 3em;
 }
 
 label {
     display: grid;
-    font-size: 2em;
+    font-size: 1.5em;
+    gap: 0.50em;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1em;
+    background-color: rgb(55, 106, 216);
+    cursor: pointer;
+    margin-block: 1em;
 }
