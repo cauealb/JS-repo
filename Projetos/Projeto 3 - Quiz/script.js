@@ -126,7 +126,6 @@ function resetBorderSelect() {
 
 function resetQuestion() {
     currentQuetions = 0;
-    currentAnswer = 0;
     pointsWin = 0
     newQuestion();
 }
