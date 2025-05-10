@@ -3,6 +3,7 @@ const question = document.getElementById("question");
 const placeButton = document.getElementById("options-container");
 const nextButton = document.getElementById("next-btn");
 const result = document.querySelector("#result-container");
+const resetButton = document.querySelector("#restart-btn");
 
 // Variável que controla as perguntas e as resposta
 let currentQuetions = 0
@@ -78,6 +79,10 @@ nextButton.addEventListener("click", () => {
 
     currentQuetions++;
     newQuestion();
+});
+
+resetButton.addEventListener("click", () => {
+    
 })
 
 function newQuestion() {
