@@ -2,6 +2,7 @@
 const question = document.getElementById("question");
 const placeButton = document.getElementById("options-container");
 const nextButton = document.getElementById("next-btn");
+const result = document.querySelector("#result-container");
 
 // Variável que controla as perguntas e as resposta
 let currentQuetions = 0
@@ -50,9 +51,7 @@ addEventListener("load", (e) => {
 arrBtn.forEach(item => {
     item.onclick = (e) => {
         nextButton.removeAttribute("disabled");
-        // if(e.target.classList.contains("border-Select")) {
 
-        // }
         resetBorderSelect();
         e.target.classList.toggle("border-select")
 
@@ -68,6 +67,12 @@ arrBtn.forEach(item => {
 
 nextButton.addEventListener("click", () => {
     if(nextButton.setAttribute("disabled", "true")) {
+        return
+    }
+
+    if(currentQuetions === Quiz.length - 1) {
+        result.classList.remove("hidden")
+
         return
     }
 
