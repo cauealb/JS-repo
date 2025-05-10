@@ -13,10 +13,18 @@ btnJSON.addEventListener("click", (e) => {
     } else if(ageInput.value === "") {
         alert("Coloque sua idade!");
         ageInput.focus();
-        
+
     } else if (professioninput.value === "") {
         alert("Coloque sua profissão!");
         professioninput.focus()
     }
+
+    const person = {
+        name: nameIput.value,
+        age: ageInput.value,
+        profession: professioninput.value
+    }
+
+    localStorage.setItem("person", JSON.stringify(person))
 })
 
