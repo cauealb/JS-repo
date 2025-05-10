@@ -82,7 +82,9 @@ nextButton.addEventListener("click", () => {
 });
 
 resetButton.addEventListener("click", () => {
-    
+    resetQuestion();
+
+    result.classList.add("hidden");
 })
 
 function newQuestion() {
@@ -115,4 +117,10 @@ function resetBorderSelect() {
     for(let i = 0; i < 3; i++) {
         arrBtn[i].classList.remove("border-select");
     }
+}
+
+function resetQuestion() {
+    currentQuetions = 0;
+    currentAnswer = 0;
+    newQuestion();
 }
