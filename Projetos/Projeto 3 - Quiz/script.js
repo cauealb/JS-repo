@@ -53,7 +53,7 @@ arrBtn.forEach(item => {
         // if(e.target.classList.contains("border-Select")) {
 
         // }
-
+        resetBorderSelect();
         e.target.classList.toggle("border-select")
 
         currentAnswer = e.target.textContent
