@@ -42,6 +42,7 @@ const Quiz = [
 addEventListener("load", (e) => {
     newQuestion();
     for(let i = 0; i < 3; i++) {
+        arrBtn[i].classList.add("border-normal")
         placeButton.append(arrBtn[i])
     }
 })
@@ -49,6 +50,8 @@ addEventListener("load", (e) => {
 arrBtn.forEach(item => {
     item.onclick = (e) => {
         nextButton.removeAttribute("disabled");
+        e.target.classList.add("border-select")
+
         currentAnswer = e.target.textContent
         const answerNow = Quiz[currentQuetions].answer
 

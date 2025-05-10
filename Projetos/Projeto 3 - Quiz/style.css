@@ -32,11 +32,18 @@ body {
   #options-container button {
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #ddd;
     border-radius: 6px;
     cursor: pointer;
     background-color: #f9f9f9;
     transition: background 0.2s;
+  }
+
+  .border-normal {
+    border: 1px solid #ddd;
+  }
+
+  .border-select {
+    border: 1px solid red ;
   }
   
   #options-container button:hover {
