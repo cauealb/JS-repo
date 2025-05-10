@@ -4,6 +4,8 @@ const placeButton = document.getElementById("options-container");
 const nextButton = document.getElementById("next-btn");
 const result = document.querySelector("#result-container");
 const resetButton = document.querySelector("#restart-btn");
+const total = document.getElementById("total");
+const score = document.getElementById("score");
 
 // Variável que controla as perguntas e as resposta
 let currentQuetions = 0
@@ -73,6 +75,9 @@ nextButton.addEventListener("click", () => {
 
     if(currentQuetions === Quiz.length - 1) {
         result.classList.remove("hidden")
+
+        score.textContent = pointsWin
+        total.textContent = Quiz.length
 
         return
     }
