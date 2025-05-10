@@ -91,17 +91,8 @@ resetButton.addEventListener("click", () => {
 })
 
 function newQuestion() {
-    switch (currentQuetions) {
-        case 0:
-            question.textContent = Quiz[currentQuetions].question;
-            break;
-        case 1:
-            question.textContent = Quiz[currentQuetions].question;
-            break;
-        case 2:
-            question.textContent = Quiz[currentQuetions].question;
-            break;
-    }
+    question.textContent = Quiz[currentQuetions].question
+
     resetBorderSelect();
 
     // Modifica os botões
