@@ -36,3 +36,6 @@ const user = {
 
 // Acessando propriedades siples com conchetes
 console.log(user["girl_friend"])
+
+// Acessando propriedades de objetos alinhados com conchetes
+console.log(user["adrees"]["street"])
