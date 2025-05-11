@@ -29,3 +29,6 @@ console.log(user.stacks[5])
 
 // Acessando propriedades de objetos alinhados
 console.log(user.adrees.number)
+
+// Acesando métodos dos objetos
+user.method()
