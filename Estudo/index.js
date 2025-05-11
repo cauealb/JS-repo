@@ -24,4 +24,8 @@ const user = {
 }
 
 // Acessando propriedades simples
-console.log(user.role)
+// console.log(user.role)
+console.log(user.stacks[5])
+
+// Acessando propriedades de objetos alinhados
+console.log(user.adrees.number)
