@@ -22,3 +22,6 @@ const user = {
         console.log("Hello Objects!")
     }
 }
+
+// Acessando propriedades simples
+console.log(user.role)
