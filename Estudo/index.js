@@ -24,10 +24,7 @@ console.log(person1 === person2)
 function Product(name, price) {
     this.name = name;
     this.heigth = price;
-
-    const produto = {};
-    produto.name = this.name;
-    produto.price = this.price;
-
-    
 }
+
+const caue = new Product("teclado", 130)
+console.log(caue.name)
