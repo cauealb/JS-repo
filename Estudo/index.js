@@ -25,10 +25,14 @@ const user = {
 
 // Acessando propriedades simples
 // console.log(user.role)
-console.log(user.stacks[5])
+// console.log(user.stacks[5])
 
 // Acessando propriedades de objetos alinhados
-console.log(user.adrees.number)
+// console.log(user.adrees.number)
 
 // Acesando métodos dos objetos
-user.method()
+// user.method()
+
+
+// Acessando propriedades siples com conchetes
+console.log(user["girl_friend"])
