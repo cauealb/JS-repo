@@ -1,9 +1,6 @@
-// Criando um objeto teste
-const product = {
-    name: "Teclado",
-    // price: 127,
-    shopping: ["União", "Tamboré", "Plazza"]
-}
+// Criando uma função construtora
+function Person(name, heigth) {
+    const personOBJ = {};
 
-// Acessando com Opitional Chaning
-console.log(product?.price)
+    
+}
