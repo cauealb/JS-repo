@@ -17,5 +17,8 @@ const user = {
     stacks: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Python", "Visual Basics"],
     girl_friend: "Geovanna Alves",
     role: "Software Enginner",
-    experience: "7 months"
+    experience: "7 months",
+    method: () => {
+        console.log("Hello Objects!")
+    }
 }
