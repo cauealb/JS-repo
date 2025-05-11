@@ -7,3 +7,11 @@ const person = {
 }
 
 person.message()
+
+// Acessando com 'this'
+const user = {
+    email: "cauealvesdev@gmai.com",
+    message: function() {
+        console.log(`Email: ${this.email}`)
+    }
+}
