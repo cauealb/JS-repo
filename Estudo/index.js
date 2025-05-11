@@ -39,3 +39,6 @@ console.log(user["girl_friend"])
 
 // Acessando propriedades de objetos alinhados com conchetes
 console.log(user["adrees"]["street"])
+
+// Acesando métodos dos objetos com conchetes
+user["method"]()
