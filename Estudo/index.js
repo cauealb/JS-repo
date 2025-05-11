@@ -14,3 +14,6 @@ function Person(name, heigth) {
 // Instâncioando a função contrutura
 const person1 = new Person("Cauê", 1.67)
 person1.message();
+
+const person2 = new Person("Geovanna", 1.60)
+console.log(person2.name)
