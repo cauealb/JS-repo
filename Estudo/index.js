@@ -28,3 +28,7 @@ function Product(name, price) {
 
 const caue = new Product("teclado", 130)
 console.log(caue.name)
+
+
+const teste = new String("Cauê")
+console.log(teste[3])
