@@ -17,3 +17,5 @@ person1.message();
 
 const person2 = new Person("Geovanna", 1.60)
 console.log(person2.name)
+
+console.log(person1 === person2)
