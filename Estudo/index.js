@@ -1,7 +1,9 @@
 // Acessando propriedades no mesmo escopo
 const person = {
-    name: "Cauê",
+    name: "Geovanna",
     message: function() {
         console.log(`Olá ${person.name}`)
     }
 }
+
+person.message()
