@@ -4,4 +4,8 @@ const creditCard = "1234567891234567"
 
 // Pegando uma fatia de uma string
 const lastDigits = creditCard.slice(-4)
-console.log(lastDigits)
+// console.log(lastDigits)
+
+// Usando padStart para colocar conteúdo no inicío da string
+const newCreditCard = lastDigits.padStart(creditCard.length, "X")
+console.log(newCreditCard)
