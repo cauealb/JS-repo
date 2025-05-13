@@ -9,3 +9,8 @@ const lastDigits = creditCard.slice(-4)
 // Usando padStart para colocar conteúdo no inicío da string
 const newCreditCard = lastDigits.padStart(creditCard.length, "X")
 console.log(newCreditCard)
+
+
+// Usando padEnd para colocar conteúdo no final da string
+const test = lastDigits.padEnd(10, "$")
+console.log(test)
