@@ -1,7 +1,5 @@
-// Usando o método indexOf
-const message = "Estou estudando a BASE do Javascript"
-console.log(message.indexOf("BASE"))
+// Transformando uma string em um Array
+const message = "Estudando Javascript do zero";
 
-
-// Usando o includes
-console.log(message.includes("BASA"))
+const newArr = Array.from(message);
+console.log(newArr)
