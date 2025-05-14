@@ -6,5 +6,7 @@ newDate.setFullYear("2020")
 // Setar o dia
 newDate.setDate(20)
 
+// Setar o mês
+newDate.setMonth(2)
 
 console.log(newDate)
