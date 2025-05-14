@@ -1,12 +1,6 @@
-const date = new Date(2025, 10, 12, 9, 45, 6);
+const date = new Date(2025, 2, 20, 12, 12, 12);
 
-// Exibindo a data em formate da minha região
-console.log(date.toLocaleDateString())
-// Exibindo a hora em formate da minha região
-console.log(date.toLocaleTimeString())
-
-
-// Exibindo a data em formato americano
-console.log(date.toLocaleDateString("en"))
-// Exibindo a data em formato americano
-console.log(date.toLocaleTimeString("en"))
+// Exibindo data como  short no toLocaleString
+console.log(date.toLocaleString("pt-BR", {
+    dateStyle: "short"
+}))
