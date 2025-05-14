@@ -1,21 +1,6 @@
-const newDate = new Date("July 4, 2025, 09:55:59");
+const aniversario = new Date("2025-03-01T05:05:05");
 
-// Setando o ano
-newDate.setFullYear("2020")
+// Formatando o dia com um zero na frente
+const day = aniversario.getDate().toString().padStart(2, "0")
 
-// Setar o dia
-newDate.setDate(20)
-
-// Setar o mês
-newDate.setMonth(2)
-
-// Setar hora
-newDate.setHours(22)
-
-// Setar minuto
-newDate.setMinutes(59)
-
-// Setar segundo
-newDate.setSeconds(1)
-
-console.log(newDate)
+console.log(day)
