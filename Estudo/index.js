@@ -22,5 +22,6 @@ console.log(date.toLocaleString("pt-BR", {
 const moeda = 126.34
 console.log(moeda.toLocaleString("pt-BR", {
     style: "currency",
-    // currency: "BRL",
+    // Colocando como moeda brasileira
+    currency: "BRL",
 }))
