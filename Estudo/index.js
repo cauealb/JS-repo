@@ -1,4 +1,4 @@
-const aniversario = new Date("2025-03-01T05:05:05");
+const aniversario = new Date("2025-03-20T05:05:05");
 
 // Formatando o dia com um zero na frente
 const day = aniversario.getDate().toString().padStart(2, "0")
@@ -11,4 +11,5 @@ const year = aniversario.getFullYear()
 const hours = aniversario.getHours()
 const minutes = aniversario.getMinutes()
 
-console.log(month)
+// Exibe as variáveis de formas diferentes
+console.log(`${day}/${month}/${year}`)
