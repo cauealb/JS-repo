@@ -8,3 +8,7 @@ console.log(date.getDate())
 
 // Pega o mês
 console.log(date.getMonth())
+
+// Pega o ano
+
+console.log(date.getFullYear())
