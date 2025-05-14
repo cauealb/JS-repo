@@ -20,3 +20,6 @@ console.log(date.getMinutes())
 
 // Pega os segundos
 console.log(date.getSeconds())
+
+// Pega os milisegundos
+console.log(date.getMilliseconds())
