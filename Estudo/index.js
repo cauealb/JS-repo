@@ -17,3 +17,10 @@ console.log(date.toLocaleString("pt-BR", {
     minute: '2-digit',
     year: "2-digit"
 }))
+
+// Usando o toLocaleString com variáveis qualquer
+const moeda = 126.34
+console.log(moeda.toLocaleString("pt-BR", {
+    style: "currency",
+    // currency: "BRL",
+}))
