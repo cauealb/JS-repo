@@ -9,3 +9,9 @@ console.log(date.toLocaleString("pt-BR", {
 console.log(date.toLocaleString("pt-BR", {
     dateStyle: 'full'
 }))
+
+// Exibindo dados que eu quero no toLocaleString
+console.log(date.toLocaleString("pt-BR", {
+    day: '2-digit',
+    month: '2-digit'
+}))
