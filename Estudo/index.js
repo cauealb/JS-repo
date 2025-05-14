@@ -10,5 +10,7 @@ console.log(date.getDate())
 console.log(date.getMonth())
 
 // Pega o ano
-
 console.log(date.getFullYear())
+
+// Pega as horas
+console.log(date.getHours())
