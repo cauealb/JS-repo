@@ -17,3 +17,6 @@ console.log(date.getHours())
 
 // Pega os minutos
 console.log(date.getMinutes())
+
+// Pega os segundos
+console.log(date.getSeconds())
