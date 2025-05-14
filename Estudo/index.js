@@ -15,4 +15,7 @@ newDate.setHours(22)
 // Setar minuto
 newDate.setMinutes(59)
 
+// Setar segundo
+newDate.setSeconds(1)
+
 console.log(newDate)
