@@ -9,4 +9,7 @@ newDate.setDate(20)
 // Setar o mês
 newDate.setMonth(2)
 
+// Setar hora
+newDate.setHours(22)
+
 console.log(newDate)
