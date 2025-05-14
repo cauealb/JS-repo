@@ -1,6 +1,2 @@
-// Exibindo a data
-console.log(new Date())
-
-
-// Exibindo os milisegundos
-console.log(new Date().getTime())
+// Exibindo a data do jeito que eu quero
+console.log(new Date(2025, 2, 20))
