@@ -12,4 +12,7 @@ newDate.setMonth(2)
 // Setar hora
 newDate.setHours(22)
 
+// Setar minuto
+newDate.setMinutes(59)
+
 console.log(newDate)
