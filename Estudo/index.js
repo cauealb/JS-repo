@@ -14,3 +14,6 @@ console.log(date.getFullYear())
 
 // Pega as horas
 console.log(date.getHours())
+
+// Pega os minutos
+console.log(date.getMinutes())
