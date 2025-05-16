@@ -1,4 +1,8 @@
-const date =  document.querySelector("p");
-console.log(date)
+// Criando uma classe
+class Person {
+    constructor() {
+        console.log("Olá")
+    }
+}
 
-date.textContent = new Date().toLocaleDateString("pt-BR")
+const person = new Person()
