@@ -10,3 +10,7 @@ class User {
         console.log(`Email enviado para ${this.name}, e foi passado para ${this.email}`)
     }
 }
+
+// Intanciando uma classe
+const user = new User("Cauê", "cauealvesdev@gmail.com")
+user.sendEmail()
