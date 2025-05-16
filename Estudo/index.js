@@ -1,8 +1,9 @@
 // Criando uma classe
 class Person {
-    constructor() {
-        console.log("Olá")
+    constructor(name) {
+        // Colocando parâmentros no construtor
+        console.log(`Olá ${name}`)
     }
 }
 
-const person = new Person()
+const person = new Person("Geovanna")
