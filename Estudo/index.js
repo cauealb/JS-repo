@@ -1,15 +1,7 @@
-// Criando a classe com o constructor
-
-class Product {
-    constructor(name) {
-        // Criando propriedades
+// Criando classes com métodos e constroctor
+class User {
+    constructor(name, email) {
         this.name = name
+        this.email = email
     }
 }
-
-// Pegando a propríedade criada
-const product1 = new Product("Teclado");
-console.log(product1.name)
-
-const product2 = new Product("Mouse");
-console.log(product2.name)
