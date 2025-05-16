@@ -2,6 +2,7 @@
 
 class Product {
     constructor(name) {
+        // Criando propriedades
         this.name = name
     }
 }
