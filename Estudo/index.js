@@ -4,4 +4,9 @@ class User {
         this.name = name
         this.email = email
     }
+
+    // Criando método para a classe
+    sendEmail() {
+        console.log(`Email enviado para ${this.name}, e foi passado para ${this.email}`)
+    }
 }
