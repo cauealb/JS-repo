@@ -1,9 +1,7 @@
-// Criando uma classe
-class Person {
+// Criando a classe com o constructor
+
+class Product {
     constructor(name) {
-        // Colocando parâmentros no construtor
-        console.log(`Olá ${name}`)
+        this.name = name
     }
 }
-
-const person = new Person("Geovanna")
