@@ -1,6 +1,4 @@
-// Obtém dados da localidade
-console.log(new Intl.DateTimeFormat().resolvedOptions())
+const date =  document.querySelector("p");
+console.log(date)
 
-// Exibindo dats com intl
-console.log(new Intl.DateTimeFormat("pt-BR").format(new Date))
-console.log(new Intl.DateTimeFormat("en-US").format(new Date))
+date.textContent = new Date().toLocaleString("pt-BR")
