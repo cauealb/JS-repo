@@ -1,8 +1,11 @@
 // Criando uma classe sem o construtor
 class User {    
+    constructor(message) {
+        this.message = message
+    }
     // Usando uma função estática na classe
     static showMessage() {
-        console.log("Hello Word Javascript!");
+        console.log(this.message);
     }
 }
 
