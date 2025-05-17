@@ -10,6 +10,15 @@ class Animal {
     }
 
     makeName() {
-        console.log(this.name);
+        console.log(`My name is ${this.name}`);
     }
 }
+
+// Fazendo heraça com outra classe
+class Lion extends Animal {
+
+}
+
+const SkarFace = new Lion("ScarFace", "ARRRRRRRRRRR!")
+SkarFace.makeSong()
+SkarFace.makeName()
