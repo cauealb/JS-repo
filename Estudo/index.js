@@ -22,3 +22,12 @@ class Lion extends Animal {
 const SkarFace = new Lion("ScarFace", "ARRRRRRRRRRR!")
 SkarFace.makeSong()
 SkarFace.makeName()
+
+// Criando uma classe de Dog e fazendo herança com a classe animal
+class Dog extends Animal {
+
+}
+
+const Safira = new Dog("Safira", "AUUUUUUUUUUUUUU");
+Safira.makeName()
+Safira.makeSong();
