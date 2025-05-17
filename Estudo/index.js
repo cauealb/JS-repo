@@ -1,17 +1,15 @@
-// Criando uma classe sem o construtor
-class User {    
-    constructor(message) {
-        this.message = message
+// Fazendo uma classe
+class Animal {
+    constructor(name, song) {
+        this.name = name
+        this.song = song
     }
-    // Usando uma função estática na classe
-    static showMessage() {
-        console.log(this.message);
+
+    makeSong() {
+        console.log(this.song);
+    }
+
+    makeName() {
+        console.log(this.name);
     }
 }
-
-// Tentando usar a classe sem instânciar
-User.showMessage()
-
-// Intânciando antes de usar a função
-// const newUser = new User();
-// newUser.showMessage();
