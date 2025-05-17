@@ -6,4 +6,8 @@ class User {
 }
 
 // Tentando usar a classe sem instânciar
-User.showMessage()
+// User.showMessage()
+
+// Intânciando antes de usar a função
+const newUser = new User();
+newUser.showMessage();
