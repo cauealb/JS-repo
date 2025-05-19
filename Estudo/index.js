@@ -22,7 +22,10 @@ const SkarFace = new Lion("SkarFace")
 SkarFace.makeSong()
 
 class Dog extends Animal {
-
+    // Sobre escrevendo a função já existênte da classe pai
+    makeSong() {
+        console.log("Woof! Woof! Woof!")
+    }
 }
 
 const Safira = new Dog("Safira")
