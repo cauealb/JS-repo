@@ -11,7 +11,10 @@ class Animal {
 
 // Criando uma classe de Leão e de cachorro e fazendo herança com a classe Animal
 class Lion extends Animal {
-
+    // Sobre escrevendo a função já existênte da classe pai
+    makeSong() {
+        console.log("ARRRRRRRR!")
+    }
 }
 
 // Instânciando a classe de leão e cachorro
