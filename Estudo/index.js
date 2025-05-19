@@ -4,9 +4,16 @@ class Animal {
         this.name = name
     }
 
-    static makeSong() {
+    makeSong() {
         console.log("Algum som genérico do animal!")
     }
 }
 
-Animal.makeSong()
+// Criando uma classe de Leão e de cachorro e fazendo herança com a classe Animal
+class Lion extends Animal {
+
+}
+
+class Dog extends Animal {
+    
+}
