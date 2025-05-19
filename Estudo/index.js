@@ -14,6 +14,13 @@ class Lion extends Animal {
 
 }
 
+// Instânciando a classe de leão e cachorro
+const SkarFace = new Lion("SkarFace")
+SkarFace.makeSong()
+
 class Dog extends Animal {
-    
+
 }
+
+const Safira = new Dog("Safira")
+Safira.makeSong()
