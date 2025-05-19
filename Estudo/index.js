@@ -4,3 +4,6 @@ const adress = {
     street: "Rua XYZ",
     number: "00"
 }
+
+// Exibindo o prototype
+console.log(adress)
