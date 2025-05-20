@@ -3,7 +3,10 @@ let obj = []
 
 try {
     
-    obj.mekeSong();
+    // lançando um erro com as classes de Erros
+    if(!obj.length > 0) {
+        throw new Error("São existe dados nesse array")
+    }
 
 } catch (error) {
     console.log(error)
