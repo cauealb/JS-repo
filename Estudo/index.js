@@ -9,5 +9,8 @@ try {
     }
 
 } catch (error) {
-    console.log(error)
+    // Verificando a classe que mandou o erro
+    if(error instanceof Error) [
+        console.log("Erro localizado no Error")
+    ]
 }
