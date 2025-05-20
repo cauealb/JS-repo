@@ -1,17 +1,10 @@
-// Criando um objeto
-const adress = {
-    city: "São Paulo",
-    street: "Rua XYZ",
-    number: "00"
+// Lançando um erro
+let obj = []
+
+try {
+    
+    obj.mekeSong();
+
+} catch (error) {
+    console.log(error)
 }
-
-// Exibindo o prototype
-console.log(adress)
-
-// Exibindo o prototype em Array
-const arr = ["Santos", "Corinthias", "São Paulo", "Palmeiras"]
-console.log(arr)
-
-// Exibindo o prototype em string
-let name = "Cauê"
-console.log(name.__proto__)
