@@ -6,6 +6,9 @@ class MyError {
 }
 
 try {
+    // Lançando um erro genérico
+    throw new Error("Erro genérico")
+
     // Colocando o erro customizado
     throw new MyError("Erro customizado")
 
