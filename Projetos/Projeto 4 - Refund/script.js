@@ -1,5 +1,9 @@
 // Selecionando os elementos do formulário
-const amount = document.getElementById("amount"); 
+const form = document.querySelector("form");
+const expense = document.getElementById("expense");
+const category = document.getElementById("category");
+const amount = document.getElementById("amount");
+
 
 amount.oninput = () => {
     let value = amount.value.replace(/\D+/g, "")
