@@ -21,3 +21,7 @@ function formatCurrency(value) {
 
     return value
 }
+
+form.onsubmit = (e) => {
+    e.preventDefault()
+}
