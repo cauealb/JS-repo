@@ -37,3 +37,12 @@ form.onsubmit = (e) => {
 
     console.log(newExpense)
 }
+
+function expenseAdd(newExpense) {
+    try {
+        
+    } catch (error) {
+        alert("Não é possível adicionar uma nova despensa")
+        console.log(error)
+    }
+}
