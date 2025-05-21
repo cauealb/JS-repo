@@ -1,5 +1,10 @@
 // Criando uma função e uma arrow function
-function myFunction() {}
+// this na função
+function myFunction() {
+    this.latName = "Cauê"
+}
+myFunction()
+console.log(typeof myFunction)
 
 // this no Arrow Function
 const myArrowFunction = () => {
@@ -7,4 +12,4 @@ const myArrowFunction = () => {
 }
 myArrowFunction()
 
-console.log(this)
+// console.log(this)
