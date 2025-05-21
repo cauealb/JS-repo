@@ -24,4 +24,16 @@ function formatCurrency(value) {
 
 form.onsubmit = (e) => {
     e.preventDefault()
+
+    const newExpense = {
+        id: new Date().getTime(),
+        expense: expense.value,
+        category: {
+            id: category.value,
+            name: category.options[category.selectedIndex].text
+        },
+        amount: amount.value
+    }
+
+    console.log(newExpense)
 }
