@@ -1,15 +1,7 @@
-// Criando uma função e uma arrow function
-// this na função
-function myFunction() {
-    this.latName = "Cauê"
+// Usando arguments na Função
+function soma() {
+    console.log(arguments)
 }
-myFunction()
-console.log(typeof myFunction)
 
-// this no Arrow Function
-const myArrowFunction = () => {
-    this.name = "Cauê"
-}
-myArrowFunction()
 
-// console.log(this)
+soma(1, 2, 3, 4, 5)
