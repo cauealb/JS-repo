@@ -1,4 +1,10 @@
 // Criando uma função e uma arrow function
 function myFunction() {}
 
-const myArrowFunction = () => {}
+// this no Arrow Function
+const myArrowFunction = () => {
+    this.name = "Cauê"
+}
+myArrowFunction()
+
+console.log(this)
