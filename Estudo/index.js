@@ -13,6 +13,10 @@ const user = {
 // const [primary, secondary, lib, framework] = stacks
 
 // Usando Rest Operator
-const { firstName, lastName,  ...rest } = user
+const { stacks,...rest } = user
 
-console.log(rest)
+// Aplicando Rest Operator em um array
+const [ primary, ...restArr ] = stacks
+
+
+console.log(rest, restArr)
