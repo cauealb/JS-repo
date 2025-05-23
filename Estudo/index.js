@@ -8,5 +8,9 @@ const user = {
 }
 
 // Desestruturando
-const { firstName, lastName, age } = user
-console.log(firstName, lastName)
+const { firstName, lastName, age, stacks } = user
+// Desestruturando array
+const [primary, secondary, lib, framework] = stacks
+
+
+console.log(firstName, lastName, lib)
