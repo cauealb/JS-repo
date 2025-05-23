@@ -2,15 +2,17 @@
 const user = {
     firstName: "Geovanna",
     lastName: "Alves",
-    fullName: "Cauê Alves",
+    full_name: "Cauê Alves",
     age: 19,
     stacks: ["Javascript", "Typescript", "React", "Node"]
 }
 
 // Desestruturando
-const { firstName, lastName, age, stacks } = user
-// Desestruturando array
-const [primary, secondary, lib, framework] = stacks
+// const { firstName, lastName, age, stacks, full_name: fullName } = user
+// // Desestruturando array
+// const [primary, secondary, lib, framework] = stacks
 
+// Usando Rest Operator
+const { firstName, lastName,  ...rest } = user
 
-console.log(firstName, lastName, lib)
+console.log(rest)
