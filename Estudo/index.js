@@ -1,13 +1,12 @@
-// Usando arguments na Função
-function soma() {
-    console.log(arguments)
+// Criando um objeto
+const user = {
+    firstName: "Geovanna",
+    lastName: "Alves",
+    fullName: "Cauê Alves",
+    age: 19,
+    stacks: ["Javascript", "Typescript", "React", "Node"]
 }
 
-// soma(1, 2, 3, 4, 5)
-
-// usando arguments no Arrow Function
-const somaArrow = () => {
-    console.log(arguments)
-}
-
-somaArrow(1, 2, 3, 4)
+// Desestruturando
+const { firstName, lastName, age } = user
+console.log(firstName, lastName)
