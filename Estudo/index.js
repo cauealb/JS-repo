@@ -17,5 +17,7 @@ const updateUser = {
     cargo: "Desenvolvedor Full-Stack Javascript + Typescript"
 }
 
-console.log(User)
-console.log(updateUser)
+//Desestruturando o objeto
+const {lastName, cargo} = updateUser
+
+console.log(lastName, cargo)
