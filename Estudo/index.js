@@ -21,10 +21,9 @@ const updateUser = {
 const {lastName, cargo} = updateUser
 
 // Criando um novo objeto com o antigo
-
 const newUserUpdate = {
     ...User,
     frelancer: "Full Stack Developer React + Next"
 }
 
-console.log(lastName, cargo)
+console.log(newUserUpdate)
