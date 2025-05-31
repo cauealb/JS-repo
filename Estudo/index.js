@@ -2,7 +2,7 @@
 const apiCall = new Promise((resolve, reject) => {
     // Criando uma chamada de uma Api fake
     setTimeout(() => {
-        resolve('Sucesso')
+        reject('Erro')
     }, 2000)
 })
 
@@ -18,8 +18,13 @@ const apiCall = new Promise((resolve, reject) => {
 
 // Usando o Async/Await
 async function run() {
-    const resposta = await apiCall
-    console.log(resposta)
+    // Usando o try para pegar o erro na promisse
+   try{
+    const reposta = await apiCall
+    console.log(reposta)
+   } catch(error) {
+        console.log(error)
+   } 
 }
 
 run()
