@@ -10,4 +10,8 @@ const apiCall = new Promise((resolve, reject) => {
     }, 2000)
 })
 
-console.log(apiCall)
+apiCall
+    // Usando o then para pegar o valor do resultado
+    .then((sucess) => {
+        console.log(sucess)
+    })
