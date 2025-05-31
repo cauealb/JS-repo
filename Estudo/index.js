@@ -1,4 +1,8 @@
 // Criando uma Promisse
-new Promise((resolve, reject) => {
-    
+const apiCall = new Promise((resolve, reject) => {
+    // Imprimindo o erro ou o sucesso
+    // resolve('Sucesso')
+    reject('Errou!')
 })
+
+console.log(apiCall)
