@@ -19,5 +19,12 @@ const estoque = [
 // console.log(findIndex)
 
 // Usando o some
-const some = estoque.some((item) => item.name === 'Papel')
-console.log(some)
+// const some = estoque.some((item) => item.name === 'Papel')
+// console.log(some)
+
+// Usando o every
+const every = estoque.every((item) => {
+    return item.price > 5
+})
+
+console.log(every)
