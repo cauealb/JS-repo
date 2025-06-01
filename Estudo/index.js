@@ -13,7 +13,11 @@ const estoque = [
 // console.log(find)
 
 // Usando o findIndex
-const findIndex = estoque.findIndex((item) => {
-    return item.quantity === 0
-})
-console.log(findIndex)
+// const findIndex = estoque.findIndex((item) => {
+//     return item.quantity === 0
+// })
+// console.log(findIndex)
+
+// Usando o some
+const some = estoque.some((item) => item.name === 'Papel')
+console.log(some)
