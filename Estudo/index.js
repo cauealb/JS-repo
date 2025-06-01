@@ -2,4 +2,7 @@
 const role = 'Desenvolvedor Full Stack Javascript + React'
 
 const start = role.startsWith('Desenvolvedor')
-console.log(start)
+
+// Usando o endsWith
+const end = role.endsWith('React')
+console.log(end)
