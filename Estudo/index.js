@@ -23,8 +23,17 @@ const estoque = [
 // console.log(some)
 
 // Usando o every
-const every = estoque.every((item) => {
-    return item.price > 5
-})
+// const every = estoque.every((item) => {
+//     return item.price > 5
+// })
 
-console.log(every)
+// console.log(every)
+
+// Usando o map
+const map = estoque.map((item) => {
+    return {
+        ...item,
+        valorTotal: (item.quantity === 0 ? false : true)
+    }
+})
+console.log(map)
