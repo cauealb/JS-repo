@@ -9,5 +9,11 @@ const estoque = [
     {name: 'Caderno', price: 15, quantity: 2},
 ]
 
-const find = estoque.find((item) => item.price > 1500)
-console.log(find)
+// const find = estoque.find((item) => item.price > 1500)
+// console.log(find)
+
+// Usando o findIndex
+const findIndex = estoque.findIndex((item) => {
+    return item.quantity === 0
+})
+console.log(findIndex)
