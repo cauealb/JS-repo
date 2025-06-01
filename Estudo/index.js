@@ -39,8 +39,15 @@ const estoque = [
 // console.log(map)
 
 // Usando o filter
-const filter = estoque.filter((item) => {
-    return item.name.startsWith('i')
-})
+// const filter = estoque.filter((item) => {
+//     return item.name.startsWith('i')
+// })
 
-console.log(filter)
+// console.log(filter)
+
+// Usando o reducer
+const reduce = estoque.reduce((accummulator, item) => {
+    return accummulator + item.quantity
+}, 0)   
+
+console.log(reduce)
