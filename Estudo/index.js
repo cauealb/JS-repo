@@ -30,10 +30,17 @@ const estoque = [
 // console.log(every)
 
 // Usando o map
-const map = estoque.map((item) => {
-    return {
-        ...item,
-        valorTotal: (item.quantity === 0 ? false : true)
-    }
+// const map = estoque.map((item) => {
+//     return {
+//         ...item,
+//         valorTotal: (item.quantity === 0 ? false : true)
+//     }
+// })
+// console.log(map)
+
+// Usando o filter
+const filter = estoque.filter((item) => {
+    return item.name.startsWith('i')
 })
-console.log(map)
+
+console.log(filter)
